@@ -10,19 +10,23 @@ extern "C"
 
 // See Catch2's documentation: https://github.com/catchorg/Catch2/blob/devel/docs/tutorial.md#scaling-up
 
-TEST_CASE("sumtail")
+TEST_CASE("sumtail") //passed
 {
     // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumtail(1,0)==1);
+    REQUIRE(sumtail(5,0)==15);
+    REQUIRE(sumtail(1238,0)==766941);
 }
 
-TEST_CASE("sumwhile")
+TEST_CASE("sumwhile") //
 {
     // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(sumwhile(1)==1);
+    REQUIRE(sumwhile(5)==15);
+    REQUIRE(sumwhile(1238)==766941);
 }
 
-TEST_CASE("sumn")
+TEST_CASE("sumn") //test passed
 {
     REQUIRE(sumn(1)==1); // sum(1) must be 1
     REQUIRE(sumn(3)==9); //sum(3) = 1+3+5 = 9
@@ -32,7 +36,9 @@ TEST_CASE("sumn")
 TEST_CASE("fib")
 {
    // Add the tests for excercise 4 "fib" function here. Use "REQUIRE()" statement to check. 
-    REQUIRE(1==0);
+    REQUIRE(fib(1,0,1)==1);
+    REQUIRE(fib(2,0,1)==1);
+    REQUIRE(fib(10,0,1)==55);
 }
 
 
